@@ -1,0 +1,103 @@
+@import "~bootstrap/scss/bootstrap";
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.header {
+  @extend sticky-top;
+  background-color: #f1f1f1;
+}
+
+.header #logo {
+  margin: 10px 10px 15px 50px;
+}
+
+.profileImage {
+  @extend .rounded-circle;
+}
+
+.profileImage#headerProfileImage {
+  margin: 10px 30px 15px 10px;
+
+}
+
+.button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: 136px;
+  z-index: 1;
+  width: 100px;
+  height: 31px;
+}
+
+div.fileGridTable {
+  border: 2px solid #FFFFFF;
+  width: 200%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 50px 30px;
+  overflow: scroll;
+}
+
+.fileTable.fileGridTable .divTableCell, .fileTable.fileGridTable .divTableHead {
+  border: 1px solid #FFFFFF;
+  padding: 3px 6px;
+}
+.fileTable.fileGridTable .divTableBody .divTableCell {
+  font-size: 13px;
+}
+.fileTable.fileGridTable .divTableRow:nth-child(even) {
+  background: #F5F3E9;
+}
+.fileTable.fileGridTable .divTableHeading {
+  background: #FFFFFF;
+  border-bottom: 2px solid #F0BB13;
+}
+.fileTable.fileGridTable .divTableHeading .divTableHead {
+  font-size: 14px;
+  font-weight: bold;
+  color: #473806;
+  text-align: left;
+  border-left: 2px solid #F0BB13;
+}
+.fileTable.fileGridTable .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
+
+.fileGridTable .tableFootStyle {
+  font-size: 14px;
+}
+
+.divTableHeading {
+  display: table-header-group;
+}
+
+.divTableBody {
+  display: table-row-group;
+}

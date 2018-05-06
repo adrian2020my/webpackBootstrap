@@ -1,0 +1,14 @@
+#img_container {
+    position:absolute;
+    display:flex;
+    border:none;
+    width:100%;
+    height:auto;
+}
+
+#qr-item {
+    width:auto;
+    height:100%;
+    margin: auto;
+}
+

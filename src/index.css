@@ -1,0 +1,12 @@
+@import url("css/normalize.css");
+@import url("css/custom.css");
+@import url("css/test.scss");
+@import url("css/custom.scss");
+@import url("~bootstrap/dist/css/bootstrap.css");
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
